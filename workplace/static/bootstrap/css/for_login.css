@@ -1,0 +1,21 @@
+.login{
+
+	text-align:center;
+
+}
+
+fieldset{width:700px;
+     }
+
+#for_form{
+	margin-left:20%;
+	background-color:lightgray;
+	width:730px;
+	border:2px;
+	margin-top:20px;
+}
+
+.for_submit{
+    border-color: darkgrey;
+    background-color: #2aabd2;
+}

@@ -1,0 +1,30 @@
+{% extends "hospital/home.html" %}
+{% load static %}
+{% block title %}
+<title>invest</title>
+
+<link rel="stylesheet" href="{% static '../static/bootstrap/css/flex.css' %}">
+<link rel="stylesheet" href="{% static '../static/bootstrap/css/base.css' %}">
+{% endblock %}
+{% block content %}
+{% for item in lst %}
+<table class="tab1">
+
+    <caption valign="top" class="capt"> {{item.0}} </caption>
+    {% for head in item.1 %}
+    <th> {{head}} </th>
+    {% endfor %}
+
+    {% for items1 in item.2 %}
+
+    <tr >
+        {% for j in items1 %}
+        <td class="forcell">{{j}}</td>
+        {% endfor %}
+
+    <tr>
+    {% endfor %}
+
+{% endfor %}
+</table>
+{% endblock %}

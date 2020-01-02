@@ -1,0 +1,31 @@
+{% extends "hospital/home.html" %}
+{% load static %}
+     {% block title %}
+
+		<meta charset="utf-8">
+    <title>Registration</title>		
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="{% static '../static/bootstrap/css/for_login.css' %}">
+	<link rel="stylesheet" href="{% static '../static/bootstrap/css/flex.css' %}">
+    {% endblock %}
+
+
+	{% block content %}
+	<div class="login">
+	 <form method ="post" id="for_form" action="/login/login/">
+	 <fieldset>
+	 <legend>Login UP</legend>
+	 {% for field in form %}{% csrf_token %}
+             <label >{{field.label}}</label>
+             <p>{{field}}</p>
+
+        {% endfor %}
+	  <button type="button" name ="sub" class="for_submit">Submit</button>
+	  </fieldset>
+     </form>	 
+	
+	
+	</div>
+	{% endblock %}
+

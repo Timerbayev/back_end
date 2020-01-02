@@ -1,0 +1,60 @@
+[
+    [
+        "Sonography",
+        [
+            "Number",
+            "Price of the investigations",
+            "Type of investigation",
+            "Discount in percent %"
+        ],
+        [
+            [
+                1,
+                "1000 tenge",
+                "Abdominal",
+                "20 %"
+            ],
+            [
+                2,
+                "1420 tenge",
+                "Heart",
+                "20 %"
+            ],
+            [
+                3,
+                "1200 tenge",
+                "Urology",
+                "20 %"
+            ]
+        ]
+    ],
+    [
+        "Surgeon",
+        [
+            "Number",
+            "Price of the investigations",
+            "Type of investigation",
+            "Discount in percent %"
+        ],
+        [
+            [
+                1,
+                "1000 tenge",
+                "Consultation",
+                "20 %"
+            ],
+            [
+                2,
+                "1420 tenge",
+                "operation",
+                "20 %"
+            ],
+            [
+                3,
+                "1200 tenge",
+                "dressing",
+                "20 %"
+            ]
+        ]
+    ]
+]

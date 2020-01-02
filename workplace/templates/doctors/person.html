@@ -1,0 +1,17 @@
+{% extends "hospital/home.html" %}
+{% load static %}
+
+    {% block title %}
+		<title>Person</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="{% static '../static/bootstrap/css/spec.css' %}">
+	<link rel="stylesheet" href="{% static '../static/bootstrap/css/flex.css' %}">
+{% endblock %}
+{% block content %}
+<h1 id="spec_head" >{{staffer.specialization}} </h1>
+<ul class="lst">
+<li >{{staffer.first_name}} {{staffer.last_name}}</li>
+<li > Experience of occupation   {{staffer.work_experience}}  years</li>
+</ul>
+{% endblock %}
+

@@ -1,0 +1,183 @@
+.head{text-align:center;
+   color:black;
+   background: white;
+   margin-top: auto;
+   opacity: 0.7;
+   margin-bottom: auto;
+
+}
+
+ .fon{
+ background-image:url(../img/fon.jpg);
+ }
+ .fon1{
+     background-image: url(../img/luxfon.jpg);
+ }
+
+   .semi {
+    opacity: 0.5; /* Полупрозрачность элемента */
+   }
+
+   .image{width: 192px;
+	   height:108px;
+   }
+
+
+ input {
+	display: block;
+	width: 30%;
+	height: 30px;
+	margin-top:5px;
+	margin-left:40%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.tool{
+ margin-left:50%;
+ margin-top:10px;
+}
+
+label {text-align: center;
+margin-left:40%;}
+
+fieldset {margin-left:25%;
+margin-right:25%;
+}
+.tab{
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    background-color: red;
+    color: white;
+    font-style: italic;
+}
+
+.footer_ {
+            position: absolute;
+            bottom: 0px;
+            background-color:#761c19;
+            width: 100%;
+            height: 80px;
+}
+
+.foradmin{
+    width: 60%;
+    height: 200px;
+    margin-bottom:15px;
+    border: mediumblue;
+
+}
+
+.picture_{
+    width: 192px;
+    height: 108px;
+    float: left;
+    opacity: 0.7;
+}
+
+.short{
+    font-size: large;
+    font-style: italic;
+    color: #761c19;
+
+}
+
+.subadmin{
+    width: 20%;
+    height: 120px;
+    display: inline-block;
+    margin-bottom:300px;
+    margin-left: 0px;
+    text-align: left;
+
+
+}
+.foradmin1{
+    width: 30%;
+    height: 200px;
+    margin-bottom:15px;
+    border: mediumblue;
+    display: inline-block;}
+
+.btn {
+    width: 100px;
+    height: 30px;
+    opacity: 0.5;
+    margin:0 0px;
+}
+
+.tab1{
+    width: 60%;
+    border: 2px black;
+    text-align: center;
+    font-size: 22px;
+    padding: 2px;
+    margin-left: 20%;
+    }
+
+.forcell {
+     border: 1px  black solid;
+     padding: 5px;
+
+}
+
+.header{
+    background-color: #d9edf7;
+    text-align:center;
+    font-size: 27px;
+    height: 108px;
+    opacity: 0.5 ;
+}
+
+.footer {
+    background-color:darkslategrey;
+    height: 60px;
+    opacity: 0.5;
+    margin-top: auto;
+
+}
+
+.content {
+
+    height: 600px;
+    margin:auto;
+
+}
+
+.left_side{
+    width: 20%;
+    background-color: #5bc0de;
+    float: left;
+    height: 700px;
+    margin-top: 0;
+    opacity: 0.5;
+    
+}
+
+.column{
+    font-size: 25px;
+    padding: 0px;
+    border-spacing: 5px;
+    width: 100%;
+    background-color: red;
+    color: white;
+    height: 15px;
+    text-align: center;
+}
+
+.capt{
+   font-weight: bold;
+}
+
+.for_submit{
+    border-color: darkgrey;
+    background-color: #2aabd2;
+}
+
+.for_table{
+    background-color: lightgrey;
+    width: 40%;
+    margin-left: 30%;
+}

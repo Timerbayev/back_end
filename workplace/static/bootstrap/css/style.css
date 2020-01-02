@@ -1,0 +1,65 @@
+.column{
+    font-size: 25px;
+    padding: 0px;
+    border-spacing: 5px;
+    width: 100%;
+    background-color: red;
+    color: white;
+    height: 15px;
+    text-align: center;
+}
+
+.picture{
+    width: 80px;
+    height: 108px;
+    background-position: left top;
+    float: left;
+}
+
+#head{
+    text-align: -moz-center;
+    font-size: 27px;
+    font-style: italic;
+    color: red;
+    height: 108px;
+
+}
+
+.content {
+
+    height: 500px;
+
+}
+
+.footer {
+    background-color:darkslategrey;
+    height: 200px;
+
+}
+
+.header {
+	color:white;
+    text-align: center;
+	font-size:50px;
+	font-weight: 400;
+	font-family:monospace;
+	position: relative;
+    top: 20px;
+
+
+}
+
+.subfon{
+	text-align: center;
+	box-shadow: inset 0 0 6px;
+	background-color:red;
+	height: 100px;
+
+
+}
+
+.order {
+	margin-left:40%;
+	text-transform: capitalize;
+}
+

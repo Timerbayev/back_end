@@ -1,0 +1,15 @@
+/*.glyphicon {font-size:200;}*/
+/*.title {margin-bottom:5px; font-size:15px; color:#008b8b; text-align:center; font-weight:bold;}*/
+/*.form {text-align:center;color:weight;}*/
+/*.container{background:blue; margin-top:10%; }*/
+/*label{color:white;}*/
+.fon {background: url( ../img/mono.jpg);}
+h1 {background: #609ab6;
+    color: #0000ff;
+    text-align: center;
+    }
+.size { width: 200px; text-align: center; }
+
+.forform{ margin: 50px auto;
+background-position: top center;
+}

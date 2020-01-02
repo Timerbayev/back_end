@@ -1,0 +1,17 @@
+{% extends "main.html" %}
+{% load static %}
+{% block title %}Administration{%endblock%}
+{% block content %}
+
+<div class="subadmin">
+    <form method ="post" action ="/staffs/head_admin/" >{% csrf_token %}
+        <fieldset>
+            <legend> Message</legend>
+            {% for field in form %}
+                {{field}}
+            {% endfor %}
+        <button class="btn" type="submit"  >SEND</button>
+            </fieldset>
+    </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,37 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<html>
+ <head>
+  {% block title %}
+  <meta charset="utf-8">
+  <title>Номе</title>
+  <link rel="stylesheet" href="{% static '../static/bootstrap/css/flex.css' %}">
+  {% endblock %}
+ </head>
+ <body>
+ {% block hat %}
+ <h1 id = "head" ><img src="/../static/bootstrap/img/base/card.jpg" id="imgine">Cardiological Medical Center</h1>
+ <div class="flex-container">
+  <div class="flex-blog"><a href="/clinic/">Home</a></div>
+  <div class="flex-blog">Administration</div>
+  <div class="flex-blog"><a href="/staffer/staffer/">Staffers</a></div>
+  <div class="flex-blog"><a href="/invest/Invest/">Medical services</a></div>
+  <div class="flex-blog"><a href="/login/log/">Login Up</a></div>
+  <div class="flex-blog"><a href="#">Sign Up</a></div>
+  <div class="flex-blog">Contacts</div>
+</div>
+ {% endblock %}
+
+ {% block content %}
+  <div class = "container">
+     <div class ="leftside">
+	 </div>
+	 <div class ="rightside">
+	 </div>
+	 <div class ="content">
+	 </div>
+     <div class ="footer"></div>
+  </div>
+ {% endblock %}
+  </body>
+</html>
