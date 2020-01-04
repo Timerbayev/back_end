@@ -2,17 +2,18 @@
 {% load static %}
 
     {% block title %}
-		<title>Specialists</title>
+		<title>Person</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="{% static '../static/bootstrap/css/spec.css' %}">
 	<link rel="stylesheet" href="{% static '../static/bootstrap/css/flex.css' %}">
 {% endblock %}
-
-
 {% block content %}
-{% for i in lst %}
-<h1 id="spec_head">{{i.specialization}}</h1>
-<p id="spec_head"> <a href="{{ i.get_absolute_url }}" id="ref">{{i.first_name}} {{i.last_name}} </a></p>
-{% endfor %}
+<h1 id="spec_head" > {{objects.first_name}} {{objects.last_name}}</h1>
+<ul class="lst">
+<li >{{objects.occupation}}</li>
+<li >{{objects.age}} years</li>
+<li > Experience of occupation   {{objects.work_experience}}  years</li>
+<li >{{objects.education}} {{objects.education.data}} </li>
+</ul>
 {% endblock %}
 

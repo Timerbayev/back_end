@@ -12,12 +12,11 @@
  {% block hat %}
  <h1 id = "head" ><img src="/../static/bootstrap/img/base/card.jpg" id="imgine">Cardiological Medical Center</h1>
  <div class="flex-container">
-  <div class="flex-blog"><a href="/clinic/">Home</a></div>
-  <div class="flex-blog">Administration</div>
-  <div class="flex-blog"><a href="/staffer/staffer/">Staffers</a></div>
-  <div class="flex-blog"><a href="/invest/Invest/">Medical services</a></div>
-  <div class="flex-blog"><a href="/login/log/">Login Up</a></div>
-  <div class="flex-blog"><a href="#">Sign Up</a></div>
+  <div class="flex-blog"><a href="{% url 'clinic' %}">Home</a></div>
+  <div class="flex-blog"><a href="{% url 'staffers'%}">Doctors</a></div>
+  <div class="flex-blog"><a href="{% url 'Invest' %}">Medical services</a></div>
+  <div class="flex-blog"><a href="{% url 'log' %} ">Login Up</a></div>
+  <div class="flex-blog"><a href="{% url 'signup' %}">Sign Up</a></div>
   <div class="flex-blog">Contacts</div>
 </div>
  {% endblock %}

@@ -1,9 +1,20 @@
 from django.contrib import admin
-from .models import Staffer
+from .models import Staffer, Education
 
 
-class Adminstaffs(admin.ModelAdmin):
-    fields = ['first_name', 'last_name',  'slug', 'specialization', 'work_experience']
+class Adminstaff(admin.ModelAdmin):
+    fields = ['first_name', 'last_name', 'age', 'slug', 'occupation', 'specialization', 'education', 'work_experience']
 
 
-admin.site.register(Staffer, Adminstaffs)
+admin.site.register(Staffer, Adminstaff)
+
+
+class Study(admin.ModelAdmin):
+    fields = ['study', 'data', 'place']
+
+
+admin.site.register(Education, Study)
+
+
+
+

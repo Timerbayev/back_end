@@ -5,8 +5,8 @@ from .models import Users
 class Signup(forms.Form):
     username = forms.CharField(max_length=100)
     password = forms.CharField(min_length=8, widget=forms.PasswordInput)
+    password_repeat = forms.CharField(min_length=8, widget=forms.PasswordInput)
     email = forms.CharField(widget=forms.EmailInput)
-    mobile = forms.CharField()
 
     def clean_username(self):
         login = self.cleaned_data['username']

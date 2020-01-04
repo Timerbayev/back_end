@@ -1,22 +1,18 @@
 {% extends "hospital/home.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
+
     {% block title %}
 		<title>Specialists</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="{% static '../static/bootstrap/css/spec.css' %}">
 	<link rel="stylesheet" href="{% static '../static/bootstrap/css/flex.css' %}">
-    	{% endblock %}
-</head>
+{% endblock %}
 
-	<body>
-	{% block content %}
-	<div id ="base"> </div>
-	<script src="{% static '../static/bootstrap/js/index.js' %}"></script>
-	{% endblock %}
-	</body>
-</html>
+
+{% block content %}
+{% for i in objects %}
+<h1 id="spec_head">{{i.occupation}}</h1>
+<p id="spec_head"> <a href="{{ i.get_absolute_url }}" id="ref">{{i.first_name}} {{i.last_name}} </a></p>
+{% endfor %}
+{% endblock %}
 

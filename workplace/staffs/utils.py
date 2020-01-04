@@ -22,6 +22,13 @@ class PersonDetailMixin:
 
     def get(self, request, slug):
         ob = get_object_or_404(self.Object, slug__iexact=slug)
-        return render(request, self.template, {self.Object.__name__.lower(): ob})
+        return render(request, self.template, {'objects': ob})
 
 
+class ListMixin:
+    Object = 'None'
+    template = 'None'
+
+    def get(self, request):
+        lst = self.Object.object.all()
+        return render(request, self.template, {'objects': lst})
