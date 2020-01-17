@@ -31,4 +31,5 @@ class ListMixin:
 
     def get(self, request):
         lst = self.Object.object.all()
+        print(lst)
         return render(request, self.template, {'objects': lst})

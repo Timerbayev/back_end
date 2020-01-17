@@ -5,6 +5,7 @@ class Users(models.Model):
     objects = models.Manager()
     username = models.CharField(max_length=50)
     password = models.CharField(max_length=8)
+    email = models.EmailField(max_length=100, default='')
     name = models.CharField(max_length=50)
 
     def __str__(self):

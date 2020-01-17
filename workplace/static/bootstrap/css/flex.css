@@ -73,6 +73,11 @@ text-decoration:none
 
 #headers{ color:#D2691E;
 	  margin:auto;
+}
 
-
+#picture_image{
+	margin-left: 40%;
+	width: 184px;
+	height: 261px;
+	margin-top: 10px;
 }

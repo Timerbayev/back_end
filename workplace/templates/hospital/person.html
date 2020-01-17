@@ -8,9 +8,10 @@
 	<link rel="stylesheet" href="{% static '../static/bootstrap/css/flex.css' %}">
 {% endblock %}
 {% block content %}
-<h1 id="spec_head" > {{objects.first_name}} {{objects.last_name}}</h1>
+<img src="{{objects.img.url}}" id="picture_image">
+<h1 id="spec_head">{{objects.first_name}}  {{objects.last_name}} </h1>
 <ul class="lst">
-<li >{{objects.occupation}}</li>
+<li >{{objects.occupation}}{{objects.image}}</li>
 <li >{{objects.age}} years</li>
 <li > Experience of occupation   {{objects.work_experience}}  years</li>
 <li >{{objects.education}} {{objects.education.data}} </li>

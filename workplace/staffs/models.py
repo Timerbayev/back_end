@@ -26,7 +26,7 @@ class Staffer(models.Model):
     education = models.ForeignKey(Education, null=True, on_delete=models.SET_NULL)
     scientific_degree = models.CharField(max_length=100, default='')
     dismissed = models.BooleanField(default=False)
-    img = models.ImageField(upload_to="static/bootstrap/img/", height_field=None, width_field=None, max_length=100)
+    img = models.ImageField(upload_to="media/images/",  height_field=None, width_field=None, max_length=100)
 
     def get_absolute_url(self):
         return reverse('persons', kwargs={'slug': self.slug})

@@ -10,6 +10,7 @@ import datetime
 def signup(request):
     if request.method == "POST":
         form = Signup(request.POST)
+        print(request.POST)
         if form.is_valid():
             form.save()
             return HttpResponseRedirect('/')
@@ -31,6 +32,7 @@ def login(request):
             return response
 
     else:
+        print("OK")
         form = Log()
     return render(request, 'users/login.html', {'form': form})
 

@@ -17,8 +17,10 @@ Including another URLconf
 from django.conf.urls import url
 from .views import Spec, Staff, Persons
 
+
 urlpatterns = [
     url(r'person/(?P<slug>\w+)$', Persons.as_view(), name='persons'),
     url(r'Spec', Spec.as_view(template_name='staffers/spec1.html'), name='spec'),
     url(r'staffers/', Staff.as_view(), name='staffers')
 ]
+

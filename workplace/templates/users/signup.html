@@ -13,7 +13,7 @@
 
 {% block content %}
 <body class="fon1">
-<form method="post" id="for_form" action="/login/signup/">
+<form method="post" id="for_form" action="signup/signup/">
     <fieldset>
         <legend>Sign up</legend>
         {% for field in form %}{% csrf_token %}
@@ -22,7 +22,7 @@
 
         {% endfor %}
 
-        <button type="submit" name ="sub" class="for_submit">Submit</button>
+        <button type="submit" class="for_submit">Submit</button>
 
     </fieldset>
 

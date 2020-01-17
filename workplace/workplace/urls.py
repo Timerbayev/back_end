@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url, include
+from django.conf import settings
+from django.conf.urls.static import static
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,8 +28,11 @@ urlpatterns = [
     url(r'staffs/', include('staffs.urls')),
     url(r'invest', include('clinic.urls')),
     url(r'signup', include('login.urls')),
-    url(r'login', include('login.urls')),
+    url(r'login/', include('login.urls')),
     url(r'spec/', include('staffs.urls')),
     url(r'staffer/', include('staffs.urls')),
-    url(r'', include('clinic.urls')),
+    url(r'^', include('clinic.urls')),
        ]
+
+if settings.DEBUG:  # new
+    urlpatterns += staticfiles_urlpatterns()+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

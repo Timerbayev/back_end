@@ -13,15 +13,15 @@
 
 	{% block content %}
 	<div class="login">
-	 <form method ="post" id="for_form" action="/login/login/">
+	 <form method ="post" id="for_form" action="/login/log/">
 	 <fieldset>
 	 <legend>Login UP</legend>
 	 {% for field in form %}{% csrf_token %}
              <label >{{field.label}}</label>
-             <p>{{field}}</p>
+             <p >{{field}}</p>
 
         {% endfor %}
-	  <button type="button" name ="sub" class="for_submit">Submit</button>
+	  <button type="submit" name ="sub" class="for_submit">Submit</button>
 	  </fieldset>
      </form>	 
 	
